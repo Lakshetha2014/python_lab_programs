@@ -1,0 +1,39 @@
+python lab - 1:
+#1.check if number is positive or negatve or zero in python if elif program
+
+# Input from user
+num = float(input("Enter a number: "))
+
+if num > 0:
+    print("The number is Positive")
+elif num < 0:
+    print("The number is Negative")
+else:
+    print("The number is Zero")
+
+
+# 2.Function to add two numbers
+def add_numbers(a, b):
+    return a + b
+
+# Taking input from user
+num1 = float(input("Enter first number: "))
+num2 = float(input("Enter second number: "))
+
+# Calling the function
+result = add_numbers(num1, num2)
+
+print("The sum is:", result)
+
+#3. Example: Count vowels in a string
+
+def count_vowels(text):
+    vowels = "aeiouAEIOU"
+    count = 0
+    for char in text:
+        if char in vowels:
+            count += 1
+    return count
+
+sentence = input("Enter a sentence: ")
+print("Number of vowels:", count_vowels(sentence))
