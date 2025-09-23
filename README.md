@@ -1,4 +1,19 @@
 # python_lab_programs
+# python lab -1 
+# Example: Count vowels in a string
+
+def count_vowels(text):
+    vowels = "aeiouAEIOU"
+    count = 0
+    for char in text:
+        if char in vowels:
+            count += 1
+    return count
+
+sentence = input("Enter a sentence: ")
+print("Number of vowels:", count_vowels(sentence))
+
+
 #python lab - 6
  # Example: 1.Method overloading using default arguments
  
