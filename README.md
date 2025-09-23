@@ -41,7 +41,7 @@ print("Number of vowels:", count_vowels(sentence))
 #python lab - 6
  # Example: 1.Method overloading using default arguments
  
- # Parent class
+ 
 class Vehicle:
     def description(self, wheels=None, color=None): # Method overloading using default arguments
         if wheels is not None and color is not None:
@@ -51,7 +51,7 @@ class Vehicle:
         else:
             print("This is a vehicle.")
 
-# Child class
+
 class Bus(Vehicle):      
     def description(self, wheels=None, capacity=None):# Method overloading using default arguments
         if wheels is not None and capacity is not None:
@@ -61,7 +61,6 @@ class Bus(Vehicle):
         else:
             print("This is a bus.")
 
-# ----------- Demonstration ------------
 v = Vehicle()
 v.description()                 # Overloaded method 1
 v.description(2)                # Overloaded method 2
