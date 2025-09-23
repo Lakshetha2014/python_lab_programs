@@ -1,5 +1,29 @@
 # python_lab_programs
 # python lab -1 
+# Function to add two numbers
+def add_numbers(a, b):
+    return a + b
+
+# Taking input from user
+num1 = float(input("Enter first number: "))
+num2 = float(input("Enter second number: "))
+
+# Calling the function
+result = add_numbers(num1, num2)
+
+print("The sum is:", result)
+
+# Program to check if a number is positive, negative, or zero
+# Input from user
+num = float(input("Enter a number: "))
+
+if num > 0:
+    print("The number is Positive")
+elif num < 0:
+    print("The number is Negative")
+else:
+    print("The number is Zero")
+
 # Example: Count vowels in a string
 
 def count_vowels(text):
