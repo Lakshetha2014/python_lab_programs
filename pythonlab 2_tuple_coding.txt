@@ -1,0 +1,13 @@
+my_tuple = (10, 20, 30, 40)
+
+print(my_tuple[2])            # Indexing
+print(my_tuple[1:3])         # Slicing
+print(my_tuple + (50, 60)) # Concatenation
+print(my_tuple * 2)          # Repetition
+print(30 in my_tuple)       # Membership
+print(len(my_tuple))        # Length
+for i in my_tuple:            # Iteration
+    print(i)
+
+x = my_tuple.count(20) #Count
+print(x)
