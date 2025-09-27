@@ -1,0 +1,19 @@
+class Car:
+    wheel=4
+    def __int__(self,color,style):
+        self.color = color
+        self.style = style
+        
+    def showdescription(self):
+        print("This car color is a",self.color,"and style is a",self.style)
+    def changecolor(self,color):
+        self.color = color
+
+        
+c=Car()
+c.color="Black"
+c.style="Sedan"
+c.showdescription()
+print("After change the color and style")
+c.changecolor('white')
+c.showdescription()
