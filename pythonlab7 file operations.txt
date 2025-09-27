@@ -1,0 +1,33 @@
+# Writing student details into a file
+def write_student_file():
+    with open("student.txt", "w") as file:   # "w" mode -> write mode
+        n = int(input("Enter number of students: "))
+        for i in range(n):
+            name = input(f"Enter student {i+1} name: ")
+            roll = input(f"Enter student {i+1} roll number: ")
+            file.write(f"Name: {name}, Roll No: {roll}\n")
+    print("Student details written to file successfully.")
+
+# Reading student details from the file
+def read_student_file():
+    with open("student.txt", "r") as file:   # "r" mode -> read mode
+        print("\n--- Student Details from File ---")
+        content = file.read()
+        print(content)
+
+# Main program
+write_student_file()
+read_student_file()
+
+output:
+
+Enter number of students: 2
+Enter student 1 name: jaya
+Enter student 1 roll number: 101
+Enter student 2 name: ramya
+Enter student 2 roll number: 102
+Student details written to file successfully.
+
+--- Student Details from File ---
+Name: jaya, Roll No: 101
+Name: ramya, Roll No: 102
