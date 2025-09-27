@@ -1,0 +1,20 @@
+# Set Update Operations:
+
+A = {1, 2, 3, 4, 5}
+B = {4, 5, 6, 7, 8}
+
+# Add element
+A.add(10)
+print(A)
+
+# Remove element 
+A.remove(3)
+print(A)
+
+# Discard element 
+A.discard(1)
+print(A)
+
+# Clear all elements
+A.clear()
+print("A set elements are deleted",A)
